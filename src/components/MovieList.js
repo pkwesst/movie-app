@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 
 const MovieListStyle = styled.div`
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 `;
 

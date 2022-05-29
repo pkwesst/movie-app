@@ -5,6 +5,9 @@ const MovieItemStyle = Styled.div`
     margin: 50px;
     color: #e4e4e6;
     border-radius:5px;
+    &:hover{
+      cursor: pointer;
+    }
     
     .movie{
         position: relative;
@@ -29,10 +32,10 @@ const MovieItemStyle = Styled.div`
     .movie-info{
         display: flex;
         justify-content: space-between;
-        margin: 10px;
+        margin: 15px;
         
         h3{
-            margin:0;
+          margin:0;
         }
         
         span{
@@ -80,8 +83,8 @@ const MovieItem = ({ movie }) => {
             <span>⭑{vote_average}</span>
           </div>
           <div className="movie-detail">
-            <p>{release_date}</p>
-            <h3>OVERVIEW</h3>
+            <p>Realese Date {release_date}</p>
+            <h4>OVERVIEW</h4>
             <p>{overview}</p>
           </div>
         </div>

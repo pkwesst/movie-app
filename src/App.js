@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import MovieList from "./components/MovieList";
+import MovieSearch from "./components/MovieSearch";
 
 const GlobalStyle = createGlobalStyle`
 body{
@@ -16,6 +17,7 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
+      <MovieSearch />
       <MovieList />
     </div>
   );
