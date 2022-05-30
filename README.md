@@ -55,7 +55,7 @@
 
 ---
 
-## 트러블 슈팅
+## 트러블 슈팅
 
 ### Array.prototype.map() expects a return value from arrow function. 오류
 
@@ -73,7 +73,7 @@
 
 - Input의 placeholder에 react-icons을 import한 후 돋보기 아이콘을 삽입하고자 할 때 생긴 현상
 
-\__해결_
+**해결**
 
 - 해당 아이콘을 16진수로 변환한 코드를 placeholder 속성에 text와 동일한 형식으로 입력하고 CSS로 속성 정해주어 해결
 
@@ -98,6 +98,8 @@
 
 - preventDefault로 해결
 - 검색어를 useState로 관리했는데, useEffect로 관리할 경우 효율적일 것 같음
+
+---
 
 ## 학습한 내용
 
