@@ -15,7 +15,7 @@ const MovieItemStyle = Styled.div`
         overflow: hidden; 
         margin:0;  
         background-color: #67676c;
-        height: 550px;
+        height: 560px;
         border-radius:5px;
     }
 
@@ -70,9 +70,12 @@ const MovieItemStyle = Styled.div`
 
 const MovieItem = ({ movie }) => {
   const { title, overview, release_date, poster_path, vote_average } = movie;
+
+  console.log(movie);
+
   return (
     <MovieItemStyle>
-      {poster_path && (
+      {
         <div className="movie">
           <img
             src={`https://image.tmdb.org/t/p/w1280${poster_path}`}
@@ -88,7 +91,8 @@ const MovieItem = ({ movie }) => {
             <p>{overview}</p>
           </div>
         </div>
-      )}
+      }
+      {<></>}
     </MovieItemStyle>
   );
 };

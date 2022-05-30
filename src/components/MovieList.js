@@ -7,6 +7,9 @@ const MovieListStyle = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
 `;
 
 // const exMovie = {
@@ -29,7 +32,6 @@ const MovieList = () => {
           "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=3fd2be6f0c70a2a598f084ddfb75487c&page=1"
         );
         setMovies(response.data.results);
-        console.log(movies);
       } catch (e) {
         console.log(e);
       }
@@ -39,7 +41,7 @@ const MovieList = () => {
   }, []);
 
   if (loading) {
-    return <MovieListStyle>대기 중</MovieListStyle>;
+    return console.log("API loading 성공");
   }
   if (!movies) {
     return null;
