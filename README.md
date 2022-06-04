@@ -29,20 +29,21 @@
 
 <img style="width:100vw; display:block; margin:0 auto" alt="initial" src="https://user-images.githubusercontent.com/90893579/171010177-322570f6-3daf-4fdc-98d7-6049ea73df0d.png">
 
-- MovieList 컴포넌트에서 Axios 라이브러리를 통해 async/await으로 비동기 통신 요청으로 API 불러오기
+- MovieList 컴포넌트에서 Axios 라이브러리를 통해 async/await으로 비동기 통신 요청으로 TMDb API 통신
 
 ### 영화 정보 제공
 
 <img style="width:100vw; display:block; margin:0 auto" alt="overview" src="https://user-images.githubusercontent.com/90893579/171024033-2165fee3-f6e0-4269-96d8-5d8edff799c5.png">
 
 - MovieList 컴포넌트에서 MovieItem 컴포넌트로 props를 통해 영화 객체를 전달 받아 map()으로 값을 꺼내 사용
+- 커스텀 Hooks 생성해 반복되는 영화 목록 출력하는 로직 재사용
 
 ### 영화 검색
 
 <img style="width:100vw; display:block; margin:0 auto" alt="search" src="https://user-images.githubusercontent.com/90893579/171024165-fda18ae9-ce21-4c1b-a31b-c66228f1d03c.png">
 
-- MovieSearch 컴포넌트에서 Axios 라이브러리를 통해 get방식으로 검색
-- 검색어를 useState로 관리하고 Query String으로 전달해 검색
+- MovieSearch 컴포넌트에서 Axios 라이브러리를 통해 get방식으로 통신
+- 검색어를 useState로 관리하고, Axios로 get 요청 시 params 통해 검색 Query String으로 전달해 검색
 - 검색어를 입력한 경우와 입력하지 않았을 경우를 useState의 boolean으로 관리해 삼항 연산자로 화면 출력
 
 ### UI
@@ -51,7 +52,7 @@
   - Global Style로 관리
   - props 받아와 스타일 적용
 - input tag의 placeholder에 icon 사용
-- transform 속성의 translateY 설정으로 영화 컨텐츠에 마우스를 hover하면 영화 정보 출력
+- transform 속성의 translateY 설정으로 영화 컨텐츠에 마우스를 hover하면 영화 정보 개요 출력
 
 ---
 
