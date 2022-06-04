@@ -8,7 +8,9 @@
 
 - React
 - Styled Components
-- Axios 라이브러리
+- Axios
+- TMDb API
+- Context API
 
 ---
 
