@@ -4,41 +4,6 @@ import styled from "styled-components";
 import MovieItem from "./MovieItem";
 import MovieList from "./MovieList";
 
-const InputForm = styled.form`
-  margin: 0;
-  padding-top: 50px;
-  display: flex;
-  justify-content: center;
-`;
-
-const Input = styled.input`
-  padding: 15px 20px;
-  border-radius: 50px;
-  border: 1px solid #67676c;
-  background-color: #1f1f21;
-  width: 500px;
-  outline: none;
-  font-size: 21px;
-  color: #e4e4e6;
-  box-sizing: border-box;
-
-  &::-webkit-input-placeholder {
-    font-family: FontAwesome;
-    font-weight: normal;
-    overflow: visible;
-    vertical-align: top;
-    display: inline-block !important;
-    padding-left: 7px;
-    padding-top: 2px;
-  }
-`;
-
-const MovieListStyle = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-`;
-
 const MovieSearch = () => {
   const [loading, setLoading] = useState(false);
   const [movies, setMovies] = useState([]);
@@ -106,3 +71,39 @@ const MovieSearch = () => {
 };
 
 export default MovieSearch;
+
+const InputForm = styled.form`
+  margin: 0;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+`;
+
+const Input = styled.input`
+  padding: 15px 20px;
+  border-radius: 50px;
+  border: 1px solid #67676c;
+  background-color: #1f1f21;
+  width: 500px;
+  outline: none;
+  font-size: 21px;
+  color: #e4e4e6;
+  box-sizing: border-box;
+
+  &::-webkit-input-placeholder {
+    font-family: FontAwesome;
+    font-weight: normal;
+    overflow: visible;
+    vertical-align: top;
+    display: inline-block !important;
+    padding-left: 7px;
+    padding-top: 2px;
+  }
+`;
+
+const MovieListStyle = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+`;

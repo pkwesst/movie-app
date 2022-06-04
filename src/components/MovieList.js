@@ -3,15 +3,6 @@ import MovieItem from "./MovieItem";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-const MovieListStyle = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 0;
-  width: 100vw;
-  height: 100vh;
-`;
-
 // const exMovie = {
 //   title: "제목",
 //   overview: "내용",
@@ -57,3 +48,12 @@ const MovieList = () => {
 };
 
 export default MovieList;
+
+const MovieListStyle = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+`;

@@ -1,5 +1,36 @@
 import Styled from "styled-components";
 
+const MovieItem = ({ movie }) => {
+  const { title, overview, release_date, poster_path, vote_average } = movie;
+
+  console.log(movie);
+
+  return (
+    <MovieItemStyle>
+      {
+        <div className="movie">
+          <img
+            src={`https://image.tmdb.org/t/p/w1280${poster_path}`}
+            alt={title}
+          />
+          <div className="movie-info">
+            <h3>{title}</h3>
+            <span>⭑{vote_average}</span>
+          </div>
+          <div className="movie-detail">
+            <p>Realese Date {release_date}</p>
+            <h4>OVERVIEW</h4>
+            <p>{overview}</p>
+          </div>
+        </div>
+      }
+      {<></>}
+    </MovieItemStyle>
+  );
+};
+
+export default MovieItem;
+
 const MovieItemStyle = Styled.div`
     display: flex-column;
     margin: 50px;
@@ -67,34 +98,3 @@ const MovieItemStyle = Styled.div`
         transition: transform 0.2s ease-in-out;
     }
 `;
-
-const MovieItem = ({ movie }) => {
-  const { title, overview, release_date, poster_path, vote_average } = movie;
-
-  console.log(movie);
-
-  return (
-    <MovieItemStyle>
-      {
-        <div className="movie">
-          <img
-            src={`https://image.tmdb.org/t/p/w1280${poster_path}`}
-            alt={title}
-          />
-          <div className="movie-info">
-            <h3>{title}</h3>
-            <span>⭑{vote_average}</span>
-          </div>
-          <div className="movie-detail">
-            <p>Realese Date {release_date}</p>
-            <h4>OVERVIEW</h4>
-            <p>{overview}</p>
-          </div>
-        </div>
-      }
-      {<></>}
-    </MovieItemStyle>
-  );
-};
-
-export default MovieItem;
