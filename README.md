@@ -10,7 +10,6 @@
 - Styled Components
 - Axios
 - TMDb API
-- Context API
 
 ---
 
